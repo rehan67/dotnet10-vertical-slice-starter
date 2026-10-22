@@ -55,3 +55,7 @@ Stop the API and run `docker compose down -v` to delete this kit's disposable lo
 
 ## Licence
 MIT; see LICENSE. Dependency licences are listed in docs/dependencies.md.
+
+## Code formatting
+
+Run `dotnet tool restore`, then `dotnet csharpier format .` to format C# and project XML. Run `dotnet csharpier check .` to verify; CI enforces the pinned formatter. The local tool can roll forward to the installed .NET 10 runtime.
